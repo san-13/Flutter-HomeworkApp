@@ -1,16 +1,17 @@
-# fluttedemo
+#To run the code-
+Clone the repository:
+https://github.com/san-13/Flutter-HomeworkApp.git
+Open the app directory from Android Studio or VS Code.
+The main code is in the ->Flutter-HomeworkApp/lib. 
+Apk can be found in ->Flutter-HomeworkApp/build/app/outputs/apk/debuk.
 
-A new Flutter project.
 
-## Getting Started
+#Problems faced while building the app-
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+-Making nested lists.
+*Tried using the map function but was not able to make another list inside a list. The first being the vertical list of standards and the horizontal list of subjects.
+*Used the ListView.builder to build the first list and the same for the second as well which seemed to solve the problem.
+*But the vertical list was not scrollable despite keeping it inside the ScrollableChildView. Later, I found a solution which was to add a property(physics: NeverScrollableScrollPhysics()) in the ListView.
+-Placing the ‘continue’ button.
+*Had trouble placing the button over the scrollable list. Later found the stack function which allowed it to keep floating above the rest of the widgets behind.
+*Still had issues aligning the button at the bottom center of the screen but then used a nested row and column to fix the issue. It made the use of columns and rows more clearer to me as well.
