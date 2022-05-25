@@ -248,14 +248,7 @@ class _SubjectsState extends State<Subjects> {
           itemCount: resource.length,
           shrinkWrap: true,
           physics: const NeverScrollableScrollPhysics(),),
-           /*Container(
-             width: 328,
-             height: 56,
-             decoration: const BoxDecoration(
-               borderRadius: BorderRadius.all(Radius.circular(8.0)),
-               color: Color(0xFF270F36)
-             ),
-           )*/
+
          ]
         ),
         ),
@@ -289,19 +282,7 @@ class _SubjectsState extends State<Subjects> {
                     style: TextStyle(fontSize: 14.0,fontWeight: FontWeight.w700,color: Colors.white),)
               ),
             ))
-           /* Container(
-              width: 328,
-              height: 56,
-              margin: EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 8.0),
-              decoration: const BoxDecoration(
-              borderRadius: BorderRadius.all(Radius.circular(8.0),),
-              color: Color(0xFF270F36)
-              ),
-              child: const Center(
-                child:Text('Continue',
-                        style: TextStyle(fontSize: 14.0,fontWeight: FontWeight.w700,color: Colors.white),)
-              ),
-        )*/
+
         ]
           )
         ] //column children
